@@ -1,0 +1,135 @@
+.header {
+  text-align: center;
+  font-size: 50px;
+  background-color: dimgray;
+  color: black;
+  padding: 80px;
+  margin-top: 0;
+}
+.upper_row{
+  text-align: right;
+  background-color: dimgray;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.headline{
+  text-align: center;
+  color: blue;
+  font-size: 60px;
+  font-family: "Agency FB";
+}
+.photos {
+  grid-area: photo;
+}
+.room_name {
+  grid-area: header;
+  font-size: 50px
+}
+.main {
+  grid-area: main;
+  font-size: 25px
+}
+.button {
+  grid-area: button;
+  font-size: 25px
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'photo header'
+    'photo main'
+    'photo button';
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: lightgray;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px 0;
+}
+.photos img{
+    width: 480px;
+    height: 318px
+}
+
+/*kalender*/
+.month {
+  padding: 70px 25px;
+  width: 1fr;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 55px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
