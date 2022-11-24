@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konverentsiruumide broneering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="margin-top: 0; margin-left: 0; margin-right: 0">
+<p class="upper_row"> <a href="1avaleht.html">Admin</a> <a href="../index.html">Klient</a> Info</p>
+<h1 class="header">
+    <link rel="stylesheet" href="style.css">
+    Konverentsiruumide broneering<br>(admin)
+</h1>
+<div class="headline">Konverentsiruumid</div>
+
+<div class="whole_container">
+<div class="grid-container">
+  <div class="photos"><img src="https://www.officeevolution.com/wp-content/uploads/2022/04/confThree-1.jpg" alt="Väike konverentsiruum"></div>
+  <div class="room_name">Väike konverentsiruum</div>
+  <div class="main">Mahutavus - 20 inimest<br>Hind - 30 eurot tund</div>
+  <div class="button"><a href="2kalender.html">Vaata broneeringuid</a></div>
+</div>
+
+<div class="grid-container">
+  <div class="photos"><img src="https://www.fi.edu/sites/default/files/styles/gallery_large/public/images/media/image/Conference%20Room.jpg?itok=vYywLbRM" alt="Suur konverentsiruum"></div>
+  <div class="room_name">Suur konverentsiruum</div>
+  <div class="main">Mahutavus - 50 inimest<br>Hind - 50 eurot tund</div>
+  <div class="button"><a href="2kalender.html">Vaata broneeringuid</a></div>
+</div>
+  </div>
+
+</body>
+</html>
